@@ -4,7 +4,7 @@ import json
 from datetime import datetime, UTC
 
 def main():
-    with Path("cv.json").open("r", encoding="utf-8") as f:
+    with Path("profile/cv.json").open("r", encoding="utf-8") as f:
         data = json.load(f)
         data["current_year"] = datetime.now(tz=UTC).year
 
@@ -16,13 +16,13 @@ def main():
                         link["svg_data"] = svg_file.read()
 
         # Set up Jinja environment
-        env = Environment(loader=FileSystemLoader("."), autoescape=True)
-        cv_template = env.get_template("cv_template.html")
+        env = Environment(loader=FileSystemLoader("cvgen"), autoescape=True)
+        cv_template = env.get_template("./template/cv_template.html")
 
         cv_output = cv_template.render(**data)
 
         # Write the output to an HTML file
-        with Path("cv.html").open("w", encoding="utf-8") as f:
+        with Path("html/cv.html").open("w", encoding="utf-8") as f:
             f.write(cv_output)
 
         print("HTML file generated successfully!")

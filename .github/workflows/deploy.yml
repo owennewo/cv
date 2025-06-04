@@ -22,17 +22,13 @@ jobs:
           pip install .
 
       - name: Run main.py to generate cv.html
-        run: python main.py
+        run: python -m cvgen.main
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./
+          publish_dir: ./html
           publish_branch: gh-pages
           keep_files: false
           force_orphan: true
-          exclude_assets: |
-            !cv.html
-            !css/**
-            !img/**
