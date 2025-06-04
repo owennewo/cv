@@ -22,7 +22,7 @@ def main():
         cv_output = cv_template.render(**data)
 
         # Write the output to an HTML file
-        with Path("html/cv.html").open("w", encoding="utf-8") as f:
+        with Path("html/index.html").open("w", encoding="utf-8") as f:
             f.write(cv_output)
 
         print("HTML file generated successfully!")
