@@ -1,41 +1,39 @@
 {
-  "basics": {
-    "name": "Owen Williams",
-    "label": "Machine Learning / Software Engineer",
-    "image": "",
+  "name": "Owen Williams",
+  "label": "Machine Learning / Software Engineer",
+  "image_path": "img/owen.gif",
+  "contact": {
     "email": "owen.williams@gmail.com",
     "phone": "+44 07989 476 410",
-    "url": "",
-    "summary": "Experienced Machine Learning Engineer with a strong technical background in software engineering and cloud technologies. Specialized in developing and deploying ML solutions with increasing focus on Natural Language Processing / LLM applications. Proven track record of delivering complex AI projects from concept to production in regulated environments. Experienced in leading technical teams, mentoring junior colleagues, and driving continuous improvement.",
-    "location": {
-      "address": "40 Lon Isa, Rhiwbina",
-      "postalCode": "CF14 6EE",
-      "city": "Cardiff",
-      "countryCode": "UK",
-      "region": "Wales"
-    },
-    "profiles": [{
-      "network": "LinkedIn",
-      "username": "owenwilliams",
-      "url": "https://www.linkedin.com/in/owenwilliams/"
-    },
-    {
-      "network": "GitHub",
-      "username": "owennewo",
-      "url": "https://github.com/owennewo/"
-    },
-    {
-      "network": "YouTube",
-      "username": "OwenWilliamsRobotics",
-      "url": "https://www.youtube.com/OwenWilliamsRobotics"
-    }]
+    "location": "Cardiff, Wales, UK"
   },
-  "work": [{
-    "name": "DrDoctor",
+  "url": "",
+  "summary": "Experienced Machine Learning Engineer with a strong technical background in software engineering and cloud technologies. Specialized in developing and deploying ML solutions with increasing focus on Natural Language Processing / LLM applications. Proven track record of delivering complex AI projects from concept to production in regulated environments. Experienced in leading technical teams, mentoring junior colleagues, and driving continuous improvement.",
+
+  "social_links": [{
+      "label": "LinkedIn",
+      "username": "owenwilliams",
+      "url": "https://www.linkedin.com/in/owenwilliams/",
+      "svg_path": "img/linkedin.svg"
+    },
+    {
+      "label": "GitHub",
+      "username": "owennewo",
+      "url": "https://github.com/owennewo/",
+      "svg_path": "img/github.svg"
+    },
+    {
+      "label": "YouTube",
+      "username": "OwenWilliamsRobotics",
+      "url": "https://www.youtube.com/OwenWilliamsRobotics",
+      "svg_path": "img/youtube.svg"
+    }],
+  "work_experience": [{
+    "company": "DrDoctor",
     "position": "Lead Machine Learning Engineer",
     "url": "https://www.drdoctor.co.uk/",
-    "startDate": "202-02-01",
-    "endDate": "2025-05-01",
+    "start_date": "2024-02-01",
+    "end_date": "2025-05-01",
     "summary": "Led the ML team which delivered AI products to 10 NHS trusts",
     "highlights": [
       ""
@@ -47,26 +45,16 @@
   "education": [{
     "institution": "Southampton University",
     "url": "https://institution.com/",
-    "area": "Electromechanical Engineering",
-    "studyType": "MEng",
-    "startDate": "2011-01-01",
-    "endDate": "2013-01-01",
-    "score": "Distinction / 1st",
-    "courses": [
-      
-    ]
+    "degrees": ["Electromechanical Engineering MEng", "Distinction / 1st"],
+    "graduation_date": "1996"
   }],
   "awards": [],
   "certificates": [],
   "publications": [],
   "skills": [{
-    "name": "Web Development",
-    "level": "Master",
-    "keywords": [
-      "HTML",
-      "CSS",
-      "JavaScript"
-    ]
+    "name": "Vue, React, Typescript, Node.js",
+    "proficiency": 75,
+    "proficiency_label": "Comfortable"
   }],
   "languages": [{
     "language": "English",
@@ -77,21 +65,33 @@
   }],
   "interests": [{
     "name": "Robotics/electronics",
-    "keywords": [
-      "stm32g4/f1 esp32 rp2040",
-      "bldc motors, magnetic encoders, CanBus",
-      "balance bots",
-      "Mecanical keyboards"
+    "summary": "I have a passion for building robots and electronics projects, particularly those that involve machine learning and AI. I enjoy working with microcontrollers and developing custom hardware solutions.",
+    "images": [
+              {
+          "img_path": "img/example1.jpg",
+          "caption": "example caption 1"
+        }
     ]
   }],
-  "references": [],
   "projects": [{
-    "name": "Teddington Robotics - Go! (Dual VESC Balancebot Chair)",
-    "startDate": "2019-01-01",
-    "endDate": "2021-01-01",
-    "description": "Built a self balancing chair for my daugter's favourite teddy bear",
+    "title": "Teddington Robotics - Go! (Dual VESC Balancebot Chair)",
+    "summary": "Built a self balancing chair for my daugter's favourite teddy bear",
     "highlights": [
       
+    ],
+    "images": [
+        {
+          "img_path": "img/example1.jpg",
+          "caption": "example 1"
+        },
+        {
+          "img_path": "img/example1.jpg",
+          "caption": "example 1"
+        },
+        {
+          "img_path": "img/example1.jpg",
+          "caption": "example 1"
+        }
     ],
     "url": "https://www.youtube.com/watch?v=O1B_3NOeJz0"
   }]
