@@ -12,7 +12,7 @@ def main():
         if "social_links" in data:
             for link in data["social_links"]:
                 if link.get("svg_path"):
-                    with Path(link["svg_path"]).open(encoding="utf-8") as svg_file:
+                    with Path(f"html/{link["svg_path"]}").open(encoding="utf-8") as svg_file:
                         link["svg_data"] = svg_file.read()
 
         # Set up Jinja environment
