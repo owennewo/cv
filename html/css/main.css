@@ -462,18 +462,28 @@ blockquote {
 }
 
 @media print {
-  .skill-bar-label {
-    background: transparent !important;
-    background-color: transparent !important;
-    mix-blend-mode: darken;
-  }
-
   body {
     -webkit-print-color-adjust: exact !important;
     print-color-adjust: exact !important;
+    margin: 0 !important;
   }
 
-  .container {
+  .page-header {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 1rem 0 !important;
+  }
+
+  .page-header .container {
+    max-width: none !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 2rem !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .page-content .container {
     display: grid !important;
     grid-template-columns: 2fr 1fr !important;
     gap: 2rem !important;

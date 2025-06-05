@@ -65,7 +65,7 @@
     "url": "https://www.avaya.com/",
     "start_date": "2005",
     "end_date": "2018",
-    "summary": "Startup telecomms specialising in SIP and WebRTC.  Bought by Avaya for $140M in 2007 and susequntly spun off to focus on WebRTC",
+    "summary": "Startup telecomms specialising in SIP and WebRTC.  Bought by Avaya for $140M in 2007 and subsequently spun off to focus on WebRTC",
     "highlights": [
       "Developer and architect on core application server for a telephony tech startup",
       "Led integrations with Microsoft, Avaya, and Cisco products",
@@ -82,7 +82,7 @@
     "summary": "Delivered creative and technical solutions for major brands including Nike, Microsoft, Orange, Dominos, and Smithsonian Institute",
     "highlights": [
       "Worked in small, agile teams to develop cutting-edge web applications under challenging circumstances",
-      "Delivered Orange mobiles (merged with EE) first ecommerce site (Java)",
+      "Delivered Orange Mobile's first ecommerce site (Java)",
       "Delivered Dominos online store in 2 months (C#)"
     ]
   },
@@ -149,9 +149,13 @@
     "summary": "I have a passion for building robots and electronics projects, particularly those that involve machine learning and AI. I enjoy working with microcontrollers and developing custom hardware solutions.",
     "image_url": "img/teddington.png"
   },{
+    "name": "Space",
+    "summary": "Medium level space nerd, ✅ Watch Scott Manley, ✅ Play KSP, ❌ Only 2 space-related t-shirts ",
+    "image_url": "img/ksp.png"
+  },{
     "name": "Guitar",
     "summary": "Particularly playing fingerstyle Blues and Folk. Also have a few techical pojects related to learning / notation",
-    "image_url": "img/teddington.png"
+    "image_url": "img/guitar.png"
   },{
     "name": "Cycling",
     "summary": "I try to cycle daily.  Mountain biking, gravel, road, I love it!",
@@ -163,7 +167,7 @@
     "highlights": [
       "Azure Communications Service - for inbound calls",
       "Compared capabilities of Google ADK, OpenAI Agent SDK and LangSmith",
-      "Provided tools to LLMs to provide access to patient context and can take actions"
+      "Provided tools to LLMs to provide access to patient context and to expose actions"
     ],
     "image_url": "img/agent-chat.png"
   },
@@ -172,19 +176,28 @@
     "summary": "",
     "highlights": [
       "Controlling a robot the same way as as a sheepdog, through whistling!",
-      "Custom-built Jetbot powered by Jetson Nano and a Storm32 motor controller control board",
+      "Custom-built JetBot powered by Jetson Nano and a Storm32 motor controller control board",
       "PyTorch neural net is trained with the sounds of different whistles or click sounds represented spectrographically as images"
     ],
     "image_url": "img/community-sheepdog_whistle.jpg",
     "url": "https://www.youtube.com/watch?v=YnogVYTpyWo"
   },{
-    "hide": true,
+    "hide": false,
     "title": "Teddington Robotics - Go! (Dual VESC Balancebot Chair)",
-    "summary": "Built a self balancing chair for my daugter's favourite teddy bear",
+    "summary": "Built a self balancing chair for my daugter's favourite teddy bear.  The Control Board is a dual VESC (often used in skateboards) but firmware is entirely my own.  Balancing somthing this big/heavy is tricky!",
     "highlights": [
       
     ],
-    "image_url": null,
+    "image_url": "img/teddington.png",
     "url": "https://www.youtube.com/watch?v=O1B_3NOeJz0"
+  },{
+    "hide": false,
+    "title": "Driva Bach: A small Motor Control Board for Gimbal BLDCs",
+    "summary": "One of many Motor Control Boards I've designed using EasyCad/KiCad. This was printed by JLCPCB.  I'm a contributor to SimpleFOC and have done a lot with BLDCs, stm32, encoders And CanBUS",
+    "highlights": [
+      
+    ],
+    "image_url": "img/driva-bach.png",
+    "url": "https://oshwlab.com/williams.owen/driva-bach"
   }]
 }
