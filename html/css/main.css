@@ -242,6 +242,8 @@ img {
 }
 
 .side-gallery {
+  margin-left: 10px;
+  float: right;
   grid-template-columns: 1fr;
 }
 
@@ -469,5 +471,38 @@ blockquote {
   body {
     -webkit-print-color-adjust: exact !important;
     print-color-adjust: exact !important;
+  }
+
+  .container {
+    display: grid !important;
+    grid-template-columns: 2fr 1fr !important;
+    gap: 2rem !important;
+    max-width: none !important;
+  }
+  
+  main {
+    grid-column: 1 !important;
+  }
+  
+  aside {
+    grid-column: 2 !important;
+  }
+  
+  /* Prevent column breaks within sections */
+  section {
+    break-inside: avoid;
+  }
+  
+  /* Control page breaks */
+  .page-content {
+    page-break-inside: avoid;
+  }
+}
+
+.company-icon {
+  float: left;
+  margin-right: 10px;
+  img {
+    max-height: 48px;
   }
 }

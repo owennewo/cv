@@ -1,0 +1,190 @@
+{
+  "name": "Owen Williams",
+  "label": "Machine Learning / Software Engineer",
+  "image_path": "img/owen.gif",
+  "contact": {
+    "email": "owen.williams@gmail.com",
+    "phone": "+44 07989 476 410",
+    "location": "Cardiff, Wales, UK"
+  },
+  "url": "",
+  "summary": "Experienced Machine Learning Engineer with a strong technical background in software engineering and cloud technologies. Specialized in developing and deploying ML solutions with increasing focus on Natural Language Processing / LLM applications. Proven track record of delivering complex AI projects from concept to production in regulated environments. Experienced in leading technical teams, mentoring junior colleagues, and driving continuous improvement.",
+
+  "social_links": [{
+      "label": "LinkedIn",
+      "username": "owenwilliams",
+      "url": "https://www.linkedin.com/in/owenwilliams/",
+      "svg_path": "img/linkedin.svg"
+    },
+    {
+      "label": "GitHub",
+      "username": "owennewo",
+      "url": "https://github.com/owennewo/",
+      "svg_path": "img/github.svg"
+    },
+    {
+      "label": "YouTube",
+      "username": "OwenWilliamsRobotics",
+      "url": "https://www.youtube.com/OwenWilliamsRobotics",
+      "svg_path": "img/youtube.svg"
+    }],
+  "work_experience": [{
+    "company": "DrDoctor",
+    "position": "Lead Machine Learning Engineer",
+    "icon_url": "img/drdoctor.png",
+    "url": "https://www.drdoctor.co.uk/",
+    "start_date": "2022-02",
+    "end_date": "2025-05",
+    "summary": "Led the AI team developing large ML models and data products to improve NHS clinic efficiency across 50 NHS Trusts",
+    "highlights": [
+      "DNA model to predict patient no-shows and late cancels used by 10 NHS trusts",
+      "Visualisation and algorithms to support overbooking, linked appointments and workflows",
+      "LLM solutions over patient communications to automate high volume hospital tasks",
+      "Full-stack ML - infrastructure, feature engineering, model training/monitoring, and serving",
+      "Agentic LLMs prototypes (including RT Voice) using openai, google and langsmith agent sdk"
+    ]
+  },
+{
+    "company": "Admiral Insurance",
+    "position": "Serior Software / Machine Learning Engineer",
+    "icon_url": "img/admiral.ico",
+    "url": "https://www.admiral.co.uk/",
+    "start_date": "2018",
+    "end_date": "2022",
+    "summary": "Initially worked in R&D exploring new product opportunities, then moved to Advanced Analytic to help move core models to the cloud",
+    "highlights": [
+      "Developed and deployed ML solutions and researched technologies across various Admiral business areas including claims, fraud detection, and pricing",
+      "Migrated critical data pipelines and ML models from in-house systems to GCP/Vertex AI",
+      "Security champion for ML products on Google Cloud Platform"
+    ]
+  },
+{
+    "company": "Ubiquity, Avaya, CafeX",
+    "position": "Developer / Architect",
+    "icon_url": "img/avaya.png",
+    "url": "https://www.avaya.com/",
+    "start_date": "2005",
+    "end_date": "2018",
+    "summary": "Startup telecomms specialising in SIP and WebRTC.  Bought by Avaya for $140M in 2007 and susequntly spun off to focus on WebRTC",
+    "highlights": [
+      "Developer and architect on core application server for a telephony tech startup",
+      "Led integrations with Microsoft, Avaya, and Cisco products",
+      "Major role in migrating products to the cloud (kubernetes, istio) incl. DevOps practices"  
+    ]
+  },
+{
+    "company": "AKQA",
+    "position": "Developer",
+    "icon_url": "img/akqa.ico",
+    "url": "https://www.akqa.co.uk/",
+    "start_date": "2000",
+    "end_date": "2005",
+    "summary": "Delivered creative and technical solutions for major brands including Nike, Microsoft, Orange, Dominos, and Smithsonian Institute",
+    "highlights": [
+      "Worked in small, agile teams to develop cutting-edge web applications under challenging circumstances",
+      "Delivered Orange mobiles (merged with EE) first ecommerce site (Java)",
+      "Delivered Dominos online store in 2 months (C#)"
+    ]
+  },
+{
+    "company": "Logica (CGI)",
+    "position": "Lead Machine Learning Engineer",
+    "icon_url": "img/logica.ico",
+    "url": "https://www.cgi.com",
+    "start_date": "1996", 
+    "end_date": "2000",
+    "summary": "Fulfilled various development and team-lead roles across projects for BBC, Glaxo, and BT",
+    "highlights": []
+  }],
+  "volunteer": [{
+    
+  }],
+  "education": [{
+    "institution": "Southampton University",
+    "url": "https://institution.com/",
+    "degrees": ["Electromechanical Engineering MEng", "Distinction / 1st"],
+    "graduation_date": "1996"
+  }],
+  "awards": [],
+  "certificates": [],
+  "publications": [],
+  "skills": [{
+    "name": "LANG",
+    "summary": "Python, C#, Typescript, C/C++",
+    "proficiency": 90,
+    "proficiency_label": "Advanced"
+  },  {
+    "name": "AI",
+    "summary": "Azure AI Foundry, Google VertexAI, OpenAI",
+    "proficiency": 90,
+    "proficiency_label": "Advanced"
+  },
+  {
+    "name": "CLOUD",
+    "summary": "Azure, GCP, AWS, Docker, Kubernetes, DevOps, Terraform",
+    "proficiency": 80,
+    "proficiency_label": "Proficient"
+  },
+  {
+    "name": "DATA",
+    "summary": "PySpark, SQL, Pandas, NumPy, Viz",
+    "proficiency": 75,
+    "proficiency_label": "Proficient"
+  },{
+    "name": "WEB",
+    "summary": "React, Vue, REST, GraphQL",
+    "proficiency": 70,
+    "proficiency_label": "Comfortable"
+  }
+],
+  "languages": [{
+    "language": "English",
+    "fluency": "Native speaker"
+  },{
+    "language": "Welsh",
+    "fluency": "Fluent"
+  }],
+  "interests": [{
+    "name": "Robotics/electronics",
+    "summary": "I have a passion for building robots and electronics projects, particularly those that involve machine learning and AI. I enjoy working with microcontrollers and developing custom hardware solutions.",
+    "image_url": "img/teddington.png"
+  },{
+    "name": "Guitar",
+    "summary": "Particularly playing fingerstyle Blues and Folk. Also have a few techical pojects related to learning / notation",
+    "image_url": "img/teddington.png"
+  },{
+    "name": "Cycling",
+    "summary": "I try to cycle daily.  Mountain biking, gravel, road, I love it!",
+    "image_url": "img/cycling.png"
+  }],
+  "projects": [{
+    "title": "RealTime Voice - using Agentic LLMs for patient Comms",
+    "summary": "Prototyped inbound patient phone requests being served by agentic models to answer or direct patient queries",
+    "highlights": [
+      "Azure Communications Service - for inbound calls",
+      "Compared capabilities of Google ADK, OpenAI Agent SDK and LangSmith",
+      "Provided tools to LLMs to provide access to patient context and can take actions"
+    ],
+    "image_url": "img/agent-chat.png"
+  },
+  {
+    "title": "NVidia AI Project: Sheepdog Whistle Neural Network ",
+    "summary": "",
+    "highlights": [
+      "Controlling a robot the same way as as a sheepdog, through whistling!",
+      "Custom-built Jetbot powered by Jetson Nano and a Storm32 motor controller control board",
+      "PyTorch neural net is trained with the sounds of different whistles or click sounds represented spectrographically as images"
+    ],
+    "image_url": "img/community-sheepdog_whistle.jpg",
+    "url": "https://www.youtube.com/watch?v=YnogVYTpyWo"
+  },{
+    "hide": true,
+    "title": "Teddington Robotics - Go! (Dual VESC Balancebot Chair)",
+    "summary": "Built a self balancing chair for my daugter's favourite teddy bear",
+    "highlights": [
+      
+    ],
+    "image_url": null,
+    "url": "https://www.youtube.com/watch?v=O1B_3NOeJz0"
+  }]
+}

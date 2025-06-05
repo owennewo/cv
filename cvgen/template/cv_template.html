@@ -83,7 +83,13 @@
               <h2 class="section-heading">Work Experience</h2>
               {% for job in work_experience %}
                 <section>
+                  {% if job.icon_url %}
+                  <div class="company-icon" ><img src="{{ job.icon_url }}"/></div>
+                  {%endif %}
+
+                  <div>
                   <h3>
+                     
                     {% if job.url %}
                       {{ job.position }} at <a href="{{ job.url }}">{{ job.company }}</a>
                     {% else %}
@@ -93,6 +99,9 @@
                   {% if job.start_date and job.end_date %}
                     <p class="section-label">{{ job.start_date }} - {{ job.end_date }}</p>
                   {% endif %}
+                  </div>
+                  
+
                   {% if job.summary %}<p>{{ job.summary }}</p>{% endif %}
                   {% if job.highlights %}
                     <ul>
@@ -108,7 +117,19 @@
             <section>
               <h2 class="section-heading">Projects</h2>
               {% for project in projects %}
+               {% if not project.hide %}
                 <section>
+                  {% if project.image_url %}
+                    <div class="gallery side-gallery">
+                        <figure>
+                          <img width="200"
+                               src="{{ project.image_url }}"
+                               alt="{{ project.image_url }}">
+                        </figure>
+                    </div>
+                  {% endif %}
+                  <div>
+
                   <h3>
                     {% if project.url %}
                       <a href="{{ project.url }}">{{ project.title }}</a>
@@ -122,7 +143,7 @@
                       {% for highlight in project.highlights %}<li>{{ highlight }}</li>{% endfor %}
                     </ul>
                   {% endif %}
-                  {% if project.images %}
+                  <!-- {% if project.images %}
                     <div class="gallery main-gallery">
                       {% for img in project.images %}
                         <figure>
@@ -134,10 +155,13 @@
                         </figure>
                       {% endfor %}
                     </div>
-                  {% endif %}
+                  {% endif %} -->
+                                    </div>
+                {% endif %}
                 </section>
               {% endfor %}
             </section>
+            
           {% endif %}
 
           {% if volunteer_experience %}
@@ -229,7 +253,7 @@
               <ul class="unstyled-list">
                 {% for skill in skills %}
                   <li>
-                    <h3>{{ skill.name }}</h3>
+                    <h3><b>{{ skill.name }}: </b>{{ skill.summary}}</h3>
                     <div class="skill-bar">
                       <div class="skill-bar-fill w-{{ skill.proficiency }}"
                            role="meter"
@@ -264,21 +288,21 @@
               <h2 class="section-heading">Interests</h2>
               {% for interest in interests %}
                 <section>
-                  <h3>{{ interest.name }}</h3>
-                  {% if interest.summary %}<p>{{ interest.summary }}</p>{% endif %}
-                  {% if interest.images %}
+                 
+                  <div>
+                    <h3>{{ interest.name }}</h3>
+                     {% if interest.image_url %}
                     <div class="gallery side-gallery">
-                      {% for img in interest.images %}
                         <figure>
                           <img width="600"
                                height="338"
-                               src="{{ img.img_path }}"
-                               alt="{{ img.caption }}">
-                          <figcaption>{{ img.caption }}</figcaption>
+                               src="{{ interest.image_url }}"
+                               alt="{{ interest.image_url }}">
                         </figure>
-                      {% endfor %}
                     </div>
                   {% endif %}
+                    {% if interest.summary %}<p>{{ interest.summary }}</p>{% endif %}
+                  </div>
                 </section>
               {% endfor %}
             </section>
