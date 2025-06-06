@@ -41,17 +41,17 @@
       "Visualisation and algorithms to support overbooking, linked appointments and workflows",
       "LLM solutions over patient communications to automate high volume hospital tasks",
       "Full-stack ML - infrastructure, feature engineering, model training/monitoring, and serving",
-      "Agentic LLMs prototypes (including RT Voice) using openai, google and langsmith agent sdk"
+      "Agentic LLM prototypes (including RT Voice) using OpenAI, Google and LangSmith agent SDK"
     ]
   },
 {
     "company": "Admiral Insurance",
-    "position": "Serior Software / Machine Learning Engineer",
+    "position": "Senior Software / Machine Learning Engineer",
     "icon_url": "img/admiral.ico",
     "url": "https://www.admiral.co.uk/",
     "start_date": "2018",
     "end_date": "2022",
-    "summary": "Initially worked in R&D exploring new product opportunities, then moved to Advanced Analytic to help move core models to the cloud",
+    "summary": "Initially worked in R&D exploring new product opportunities, then moved to Advanced Analytics to help move core models to the cloud",
     "highlights": [
       "Developed and deployed ML solutions and researched technologies across various Admiral business areas including claims, fraud detection, and pricing",
       "Migrated critical data pipelines and ML models from in-house systems to GCP/Vertex AI",
@@ -65,11 +65,11 @@
     "url": "https://www.avaya.com/",
     "start_date": "2005",
     "end_date": "2018",
-    "summary": "Startup telecomms specialising in SIP and WebRTC.  Bought by Avaya for $140M in 2007 and subsequently spun off to focus on WebRTC",
+    "summary": "Startup telecoms specialising in SIP and WebRTC. Bought by Avaya for $140M in 2007 and subsequently spun off to focus on WebRTC",
     "highlights": [
       "Developer and architect on core application server for a telephony tech startup",
       "Led integrations with Microsoft, Avaya, and Cisco products",
-      "Major role in migrating products to the cloud (kubernetes, istio) incl. DevOps practices"  
+      "Major role in migrating products to the cloud (Kubernetes, Istio) including DevOps practices"  
     ]
   },
 {
@@ -154,7 +154,7 @@
     "image_url": "img/ksp.png"
   },{
     "name": "Guitar",
-    "summary": "Particularly playing fingerstyle Blues and Folk. Also have a few techical pojects related to learning / notation",
+    "summary": "Particularly playing fingerstyle blues and folk. Also have a few technical projects related to learning and notation",
     "image_url": "img/guitar.png"
   },{
     "name": "Cycling",
@@ -175,7 +175,7 @@
     "title": "NVidia AI Project: Sheepdog Whistle Neural Network ",
     "summary": "",
     "highlights": [
-      "Controlling a robot the same way as as a sheepdog, through whistling!",
+      "Controlling a robot the same way as a sheepdog, through whistling!",
       "Custom-built JetBot powered by Jetson Nano and a Storm32 motor controller control board",
       "PyTorch neural net is trained with the sounds of different whistles or click sounds represented spectrographically as images"
     ],
@@ -184,7 +184,7 @@
   },{
     "hide": false,
     "title": "Teddington Robotics - Go! (Dual VESC Balancebot Chair)",
-    "summary": "Built a self balancing chair for my daugter's favourite teddy bear.  The Control Board is a dual VESC (often used in skateboards) but firmware is entirely my own.  Balancing somthing this big/heavy is tricky!",
+    "summary": "Built a self-balancing chair for my daughter's favourite teddy bear. The control board is a dual VESC (often used in skateboards) but firmware is entirely my own. Balancing something this big and heavy is tricky!",
     "highlights": [
       
     ],
@@ -193,7 +193,7 @@
   },{
     "hide": false,
     "title": "Driva Bach: A small Motor Control Board for Gimbal BLDCs",
-    "summary": "One of many Motor Control Boards I've designed using EasyCad/KiCad. This was printed by JLCPCB.  I'm a contributor to SimpleFOC and have done a lot with BLDCs, stm32, encoders And CanBUS",
+    "summary": "One of many motor control boards I've designed using EasyCad/KiCad. This was printed by JLCPCB. I'm a contributor to SimpleFOC and have done a lot with BLDCs, STM32, encoders and CAN bus",
     "highlights": [
       
     ],

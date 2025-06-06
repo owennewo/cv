@@ -8,7 +8,7 @@
     <meta name="description" content="{{ name }} - {{ summary }}">
     <meta name="author" content="{{ name }}">
 
-    <meta property="og:title" content="{{ name }}">s
+    <meta property="og:title" content="{{ name }}">
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ base_url }}/index.html">
     <meta property="og:image" content="{{ base_url }}/{{ image_path }}">
@@ -84,7 +84,7 @@
               {% for job in work_experience %}
                 <section>
                   {% if job.icon_url %}
-                  <div class="company-icon" ><img src="{{ job.icon_url }}"/></div>
+                  <div class="company-icon"><img src="{{ job.icon_url }}"/></div>
                   {%endif %}
 
                   <div>
@@ -253,7 +253,7 @@
               <ul class="unstyled-list">
                 {% for skill in skills %}
                   <li>
-                    <h3><b>{{ skill.name }}: </b>{{ skill.summary}}</h3>
+                    <h3><b>{{ skill.name }}: </b>{{ skill.summary }}</h3>
                     <div class="skill-bar">
                       <div class="skill-bar-fill w-{{ skill.proficiency }}"
                            role="meter"
@@ -313,10 +313,9 @@
 
     <footer class="page-footer">
       <div class="container">
-        <p>© {{ current_year }} {{ name }}. cv code-generated with python <a src="https://github.com/owennewo/cv">here</a> .</p>
+        <p>© {{ current_year }} {{ name }}. CV code-generated with Python <a href="https://github.com/owennewo/cv">here</a>.</p>
       </div>
     </footer>
 
-    <script src="js/app.js"></script>
   </body>
 </html>
