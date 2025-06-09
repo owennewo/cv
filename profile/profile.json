@@ -89,7 +89,7 @@
   },
 {
     "company": "Logica (CGI)",
-    "position": "Lead Machine Learning Engineer",
+    "position": "Software Engineer",
     "icon_url": "img/logica.ico",
     "url": "https://www.cgi.com",
     "start_date": "1996", 
@@ -174,7 +174,7 @@
     "image_url": "img/agent-chat.png"
   },
   {
-    "title": "NVidia AI Project: Sheepdog Whistle Neural Network ",
+    "title": "NVidia AI Project: Sheepdog Whistle Neural Network",
     "summary": "",
     "highlights": [
       "Controlling a robot the same way as a sheepdog, through whistling!",
@@ -187,18 +187,14 @@
     "hide": false,
     "title": "Teddington Robotics - Go! (Dual VESC Balancebot Chair)",
     "summary": "Built a self-balancing chair for my daughter's favourite teddy bear. The control board is a dual VESC (often used in skateboards) but firmware is entirely my own. Balancing something this big and heavy is tricky!",
-    "highlights": [
-      
-    ],
+    "highlights": [],
     "image_url": "img/teddington.png",
     "url": "https://www.youtube.com/watch?v=O1B_3NOeJz0"
   },{
     "hide": true,
     "title": "Driva Bach: A small Motor Control Board for Gimbal BLDCs",
     "summary": "One of many motor control boards I've designed using EasyCad/KiCad. This was printed by JLCPCB. I'm a contributor to SimpleFOC and have done a lot with BLDCs, STM32, encoders and CAN bus",
-    "highlights": [
-      
-    ],
+    "highlights": [],
     "image_url": "img/driva-bach.png",
     "url": "https://oshwlab.com/williams.owen/driva-bach"
   }]
