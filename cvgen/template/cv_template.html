@@ -113,56 +113,6 @@
             </section>
           {% endif %}
 
-          {% if projects %}
-            <section>
-              <h2 class="section-heading">Projects</h2>
-              {% for project in projects %}
-               {% if not project.hide %}
-                <section>
-                  {% if project.image_url %}
-                    <div class="gallery side-gallery">
-                        <figure>
-                          <img width="200"
-                               src="{{ project.image_url }}"
-                               alt="{{ project.image_url }}">
-                        </figure>
-                    </div>
-                  {% endif %}
-                  <div>
-
-                  <h3>
-                    {% if project.url %}
-                      <a href="{{ project.url }}">{{ project.title }}</a>
-                    {% else %}
-                      {{ project.title }}
-                    {% endif %}
-                  </h3>
-                  {% if project.summary %}<p>{{ project.summary }}</p>{% endif %}
-                  {% if project.highlights %}
-                    <ul>
-                      {% for highlight in project.highlights %}<li>{{ highlight }}</li>{% endfor %}
-                    </ul>
-                  {% endif %}
-                  <!-- {% if project.images %}
-                    <div class="gallery main-gallery">
-                      {% for img in project.images %}
-                        <figure>
-                          <img width="600"
-                               height="338"
-                               src="{{ img.img_path }}"
-                               alt="{{ img.caption }}">
-                          <figcaption>{{ img.caption }}</figcaption>
-                        </figure>
-                      {% endfor %}
-                    </div>
-                  {% endif %} -->
-                                    </div>
-                {% endif %}
-                </section>
-              {% endfor %}
-            </section>
-            
-          {% endif %}
 
           {% if volunteer_experience %}
             <section>
@@ -287,6 +237,7 @@
             <section>
               <h2 class="section-heading">Interests</h2>
               {% for interest in interests %}
+               {% if not interest.hide %}
                 <section>
                  
                   <div>
@@ -304,12 +255,54 @@
                     {% if interest.summary %}<p>{{ interest.summary }}</p>{% endif %}
                   </div>
                 </section>
+                {% endif %}
               {% endfor %}
             </section>
           {% endif %}
         </aside>
       </div>
     </div>
+
+    {% if projects %}
+      <div class="projects-section">
+        <div class="container">
+          <section>
+            <h2 class="section-heading">Projects</h2>
+            {% for project in projects %}
+             {% if not project.hide %}
+              <section>
+                {% if project.image_url %}
+                  <div class="gallery side-gallery">
+                      <figure>
+                        <img width="200"
+                             src="{{ project.image_url }}"
+                             alt="{{ project.image_url }}">
+                      </figure>
+                  </div>
+                {% endif %}
+                <div>
+
+                <h3>
+                  {% if project.url %}
+                    <a href="{{ project.url }}">{{ project.title }}</a>
+                  {% else %}
+                    {{ project.title }}
+                  {% endif %}
+                </h3>
+                {% if project.summary %}<p>{{ project.summary }}</p>{% endif %}
+                {% if project.highlights %}
+                  <ul>
+                    {% for highlight in project.highlights %}<li>{{ highlight }}</li>{% endfor %}
+                  </ul>
+                {% endif %}
+                </div>
+              {% endif %}
+              </section>
+            {% endfor %}
+          </section>
+        </div>
+      </div>
+    {% endif %}
 
     <footer class="page-footer">
       <div class="container">

@@ -484,18 +484,19 @@ blockquote {
   }
 
   .page-content .container {
-    display: grid !important;
-    grid-template-columns: 2fr 1fr !important;
-    gap: 2rem !important;
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 1rem !important;
     max-width: none !important;
+    font-size: 0.9rem !important;
   }
   
   main {
-    grid-column: 1 !important;
+    flex: 2 !important;
   }
   
   aside {
-    grid-column: 2 !important;
+    flex: 1 !important;
   }
   
   /* Prevent column breaks within sections */
@@ -515,4 +516,11 @@ blockquote {
   img {
     max-height: 48px;
   }
+}
+
+/* Projects section styling */
+.projects-section {
+  background: #f9f9f9;
+  border-top: 1px solid #ccc;
+  padding: 2rem 0;
 }

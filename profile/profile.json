@@ -151,7 +151,8 @@
   },{
     "name": "Space",
     "summary": "Medium level space nerd, ✅ Watch Scott Manley, ✅ Play KSP, ❌ Only 2 space-related t-shirts ",
-    "image_url": "img/ksp.png"
+    "image_url": "img/ksp.png",
+    "hide": true
   },{
     "name": "Guitar",
     "summary": "Particularly playing fingerstyle blues and folk. Also have a few technical projects related to learning and notation",
@@ -191,7 +192,7 @@
     "image_url": "img/teddington.png",
     "url": "https://www.youtube.com/watch?v=O1B_3NOeJz0"
   },{
-    "hide": false,
+    "hide": true,
     "title": "Driva Bach: A small Motor Control Board for Gimbal BLDCs",
     "summary": "One of many motor control boards I've designed using EasyCad/KiCad. This was printed by JLCPCB. I'm a contributor to SimpleFOC and have done a lot with BLDCs, STM32, encoders and CAN bus",
     "highlights": [

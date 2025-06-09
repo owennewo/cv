@@ -2,6 +2,7 @@ from jinja2 import Environment, FileSystemLoader
 from pathlib import Path
 import json
 from datetime import datetime, UTC
+from playwright.sync_api import sync_playwright
 
 
 def main():
@@ -29,6 +30,29 @@ def main():
             f.write(cv_output)
 
         print("HTML file generated successfully!")
+
+        # Generate PDF from HTML using Playwright
+        pdf_output_path = Path("html/cv.pdf")
+        
+        with sync_playwright() as p:
+            browser = p.chromium.launch()
+            page = browser.new_page()
+            
+            # Load the HTML file
+            page.goto(f"file://{Path('html/index.html').absolute()}")
+            
+            # Generate PDF with print media simulation
+            page.pdf(
+                path=pdf_output_path,
+                format="A4",
+                margin={"top": "1cm", "bottom": "1cm", "left": "1cm", "right": "1cm"},
+                print_background=True,
+                prefer_css_page_size=True
+            )
+            
+            browser.close()
+        
+        print(f"PDF file generated successfully at {pdf_output_path}!")
 
 
 if __name__ == "__main__":
