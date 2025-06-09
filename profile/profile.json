@@ -40,8 +40,8 @@
       "DNA model to predict patient no-shows and late cancels used by 10 NHS trusts",
       "Visualisation and algorithms to support overbooking, linked appointments and workflows",
       "LLM solutions over patient communications to automate high volume hospital tasks",
-      "Full-stack ML - infrastructure, feature engineering, model training/monitoring, and serving",
-      "Agentic LLM prototypes (including RT Voice) using OpenAI, Google and LangSmith agent SDK"
+      "Full-stack ML - infrastructure, feature engineering, model training/monitoring, and serving in Azure",
+      "Agentic LLM prototypes (including RT Voice) using OpenAI, Google and LangSmith Agent SDK"
     ]
   },
 {
@@ -51,10 +51,11 @@
     "url": "https://www.admiral.co.uk/",
     "start_date": "2018",
     "end_date": "2022",
-    "summary": "Initially worked in R&D exploring new product opportunities, then moved to Advanced Analytics to help move core models to the cloud",
+    "summary": "Initially worked in R&D exploring new product opportunities, then moved to Advanced Analytics to help move core models to Google Cloud Platform",
     "highlights": [
       "Developed and deployed ML solutions and researched technologies across various Admiral business areas including claims, fraud detection, and pricing",
       "Migrated critical data pipelines and ML models from in-house systems to GCP/Vertex AI",
+      "Prototytes with AWS Connect including Lex (conversational AI) and Polly (text-to-speech)",
       "Security champion for ML products on Google Cloud Platform"
     ]
   },
@@ -69,7 +70,7 @@
     "highlights": [
       "Developer and architect on core application server for a telephony tech startup",
       "Led integrations with Microsoft, Avaya, and Cisco products",
-      "Major role in migrating products to the cloud (Kubernetes, Istio) including DevOps practices"  
+      "Major role in migrating products to AWS and Azure (Kubernetes, Istio) including DevOps practices"  
     ]
   },
 {
@@ -115,6 +116,7 @@
     "proficiency_label": "Advanced"
   },  {
     "name": "AI",
+      "Prototytes with AWS Connect including Lex (conversational AI) and Polly (text-to-speech)",
     "summary": "Azure AI Foundry, Google VertexAI, OpenAI",
     "proficiency": 90,
     "proficiency_label": "Advanced"
