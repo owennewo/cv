@@ -134,7 +134,7 @@ section {
 
 .page-content .container {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 2fr 1fr;
 }
 
 .page-header,
@@ -426,9 +426,6 @@ blockquote {
     text-align: left;
   }
 
-  .page-content .container {
-    grid-template-columns: 2fr 1fr;
-  }
 
   .header-top {
     gap: 2rem;
@@ -461,77 +458,6 @@ blockquote {
   }
 }
 
-@media print {
-  body {
-    -webkit-print-color-adjust: exact !important;
-    print-color-adjust: exact !important;
-    margin: 0 !important;
-  }
-
-  .page-header {
-    width: 100% !important;
-    margin: 0 !important;
-    padding: 1rem 0 !important;
-  }
-
-  .page-header .container {
-    max-width: none !important;
-    width: 100% !important;
-    margin: 0 !important;
-    padding: 0 2rem !important;
-    display: flex !important;
-    flex-direction: column !important;
-  }
-
-  .page-content .container {
-    display: flex !important;
-    flex-direction: row !important;
-    gap: 1rem !important;
-    max-width: none !important;
-    font-size: 0.9rem !important;
-  }
-  
-  main {
-    flex: 2 !important;
-  }
-  
-  aside {
-    flex: 1 !important;
-  }
-  
-  /* Prevent column breaks within sections */
-  section {
-    break-inside: avoid;
-  }
-  
-  /* Control page breaks */
-  .page-content {
-    page-break-inside: avoid;
-  }
-  
-  /* Project styles for print */
-  .project-content {
-    display: flex !important;
-  }
-  
-  .project-text {
-    width: 75% !important;
-  }
-  
-  .project-image {
-    flex-shrink: 0 !important;
-    max-height: 100px !important;
-    padding-left: 20px !important;
-    float: right !important;
-  }
-  
-  .project-image img {
-    width: auto !important;
-    height: 125px !important;
-    border-radius: 4px !important;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
-  }
-}
 
 .company-icon {
   float: left;
@@ -584,13 +510,59 @@ blockquote {
 
 /* Mobile layout - stack vertically */
 @media (max-width: 48rem) {
+  .page-content .container {
+    grid-template-columns: 1fr;
+  }
+  
+  aside {
+    border-left: none;
+    border-top: 1px solid #ccc;
+  }
+  
   .project-item {
     grid-template-columns: 1fr;
     gap: 1rem;
   }
   
+}
+
+@media print {
+  .page-content .container {
+    display: grid !important;
+    grid-template-columns: 2fr 1fr !important;
+    gap: 1rem !important;
+  }
+  
+  aside {
+    border-left: 1px solid #ccc !important;
+    border-top: none !important;
+  }
+  
+  /* Project styles for print - needed because page.pdf() ignores regular CSS */
+  .project-content {
+    display: flex !important;
+  }
+  
+  .project-text {
+    width: 75% !important;
+  }
+  
   .project-image {
-    order: -1; /* Put image first on mobile */
-    max-width: 100%;
+    flex-shrink: 0 !important;
+    max-height: 100px !important;
+    padding-left: 20px !important;
+    float: right !important;
+  }
+  
+  .project-image img {
+    width: auto !important;
+    height: 125px !important;
+    border-radius: 4px !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+  }
+  
+  /* Prevent column breaks within sections */
+  section {
+    break-inside: avoid;
   }
 }

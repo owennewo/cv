@@ -1,7 +1,8 @@
-from jinja2 import Environment, FileSystemLoader
-from pathlib import Path
 import json
-from datetime import datetime, UTC
+from datetime import UTC, datetime
+from pathlib import Path
+
+from jinja2 import Environment, FileSystemLoader
 from playwright.sync_api import sync_playwright
 
 
@@ -33,25 +34,31 @@ def main():
 
         # Generate PDF from HTML using Playwright
         pdf_output_path = Path("html/cv.pdf")
-        
+
         with sync_playwright() as p:
             browser = p.chromium.launch()
             page = browser.new_page()
-            
+
+            # Set viewport to simulate desktop width for proper two-column layout
+            page.set_viewport_size({"width": 1200, "height": 1600})
+
             # Load the HTML file
             page.goto(f"file://{Path('html/index.html').absolute()}")
-            
+
+            # Wait for content to load
+            page.wait_for_load_state("networkidle")
+
             # Generate PDF with print media simulation
             page.pdf(
                 path=pdf_output_path,
                 format="A4",
                 margin={"top": "1cm", "bottom": "1cm", "left": "1cm", "right": "1cm"},
                 print_background=True,
-                prefer_css_page_size=True
+                prefer_css_page_size=False,
             )
-            
+
             browser.close()
-        
+
         print(f"PDF file generated successfully at {pdf_output_path}!")
 
 
