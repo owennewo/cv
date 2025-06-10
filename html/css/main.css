@@ -3,8 +3,8 @@
   --link-color-hover: #00487c;
   --header-footer-bg-color: #f0f0f0;
   --aside-accent-color: #9d836b;
-  --skill-bar-fill-color: #f3e4c6;
-  --blockquote-bg-color: #f7fafc;
+  --skill-bar-fill-color: #e7d6c7;
+  --blockquote-bg-color: transparent;
   --blockquote-accent-color: #4a5568;
   --blockquote-text-color: #4a5568;
   --spacing-inline: 0.5rem;
@@ -134,7 +134,7 @@ section {
 
 .page-content .container {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 2fr 1fr;
 }
 
 .page-header,
@@ -426,9 +426,6 @@ blockquote {
     text-align: left;
   }
 
-  .page-content .container {
-    grid-template-columns: 2fr 1fr;
-  }
 
   .header-top {
     gap: 2rem;
@@ -461,58 +458,111 @@ blockquote {
   }
 }
 
-@media print {
-  body {
-    -webkit-print-color-adjust: exact !important;
-    print-color-adjust: exact !important;
-    margin: 0 !important;
-  }
-
-  .page-header {
-    width: 100% !important;
-    margin: 0 !important;
-    padding: 1rem 0 !important;
-  }
-
-  .page-header .container {
-    max-width: none !important;
-    width: 100% !important;
-    margin: 0 !important;
-    padding: 0 2rem !important;
-    display: flex !important;
-    flex-direction: column !important;
-  }
-
-  .page-content .container {
-    display: grid !important;
-    grid-template-columns: 2fr 1fr !important;
-    gap: 2rem !important;
-    max-width: none !important;
-  }
-  
-  main {
-    grid-column: 1 !important;
-  }
-  
-  aside {
-    grid-column: 2 !important;
-  }
-  
-  /* Prevent column breaks within sections */
-  section {
-    break-inside: avoid;
-  }
-  
-  /* Control page breaks */
-  .page-content {
-    page-break-inside: avoid;
-  }
-}
 
 .company-icon {
   float: left;
   margin-right: 10px;
   img {
     max-height: 48px;
+  }
+}
+
+/* Projects section styling */
+.projects-section {
+  background: #f9f9f9;
+  border-top: 1px solid #ccc;
+  padding: 2rem 0;
+}
+
+.project-item {
+  grid-template-columns: 1fr auto;
+  gap: 1.5rem;
+  align-items: start;
+  margin-bottom: 2rem;
+}
+
+.project-content {
+  min-width: 0; /* Allows content to shrink */
+  display: flex;
+}
+
+.project-text {
+  width: 75%;
+}
+
+.project-title {
+  margin-bottom: 0.5rem !important;
+}
+
+.project-image {
+  flex-shrink: 0;
+  max-height: 100px;
+  padding-left: 20px;
+  float: right;
+}
+
+.project-image img {
+  width: auto;
+  height: 125px;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile layout - stack vertically */
+@media (max-width: 48rem) {
+  .page-content .container {
+    grid-template-columns: 1fr;
+  }
+  
+  aside {
+    border-left: none;
+    border-top: 1px solid #ccc;
+  }
+  
+  .project-item {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+}
+
+@media print {
+  .page-content .container {
+    display: grid !important;
+    grid-template-columns: 2fr 1fr !important;
+    gap: 1rem !important;
+  }
+  
+  aside {
+    border-left: 1px solid #ccc !important;
+    border-top: none !important;
+  }
+  
+  /* Project styles for print - needed because page.pdf() ignores regular CSS */
+  .project-content {
+    display: flex !important;
+  }
+  
+  .project-text {
+    width: 75% !important;
+  }
+  
+  .project-image {
+    flex-shrink: 0 !important;
+    max-height: 100px !important;
+    padding-left: 20px !important;
+    float: right !important;
+  }
+  
+  .project-image img {
+    width: auto !important;
+    height: 125px !important;
+    border-radius: 4px !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+  }
+  
+  /* Prevent column breaks within sections */
+  section {
+    break-inside: avoid;
   }
 }

@@ -8,7 +8,7 @@
     "location": "Cardiff, Wales, UK"
   },
   "url": "",
-  "summary": "Experienced Machine Learning Engineer with a strong technical background in software engineering and cloud technologies. Specialized in developing and deploying ML solutions with increasing focus on Natural Language Processing / LLM applications. Proven track record of delivering complex AI projects from concept to production in regulated environments. Experienced in leading technical teams, mentoring junior colleagues, and driving continuous improvement.",
+  "summary": "Experienced Machine Learning Engineer with a strong technical background in software engineering and cloud technologies. Specialised in developing and deploying ML solutions with focus on Natural Language Processing / LLM applications. Proven track record of delivering complex AI projects from concept to production in regulated environments. Experienced in leading technical teams, mentoring junior colleagues, and driving continuous improvement.",
 
   "social_links": [{
       "label": "LinkedIn",
@@ -40,21 +40,22 @@
       "DNA model to predict patient no-shows and late cancels used by 10 NHS trusts",
       "Visualisation and algorithms to support overbooking, linked appointments and workflows",
       "LLM solutions over patient communications to automate high volume hospital tasks",
-      "Full-stack ML - infrastructure, feature engineering, model training/monitoring, and serving",
-      "Agentic LLMs prototypes (including RT Voice) using openai, google and langsmith agent sdk"
+      "Full-stack ML - infrastructure, feature engineering, model training/monitoring, and serving in Azure",
+      "Agentic LLM prototypes (including RT Voice) using OpenAI, Google and LangSmith Agent SDK"
     ]
   },
 {
     "company": "Admiral Insurance",
-    "position": "Serior Software / Machine Learning Engineer",
+    "position": "Senior Software / Machine Learning Engineer",
     "icon_url": "img/admiral.ico",
     "url": "https://www.admiral.co.uk/",
     "start_date": "2018",
     "end_date": "2022",
-    "summary": "Initially worked in R&D exploring new product opportunities, then moved to Advanced Analytic to help move core models to the cloud",
+    "summary": "Initially worked in R&D exploring new product opportunities, then moved to Advanced Analytics to help move core models to Google Cloud Platform",
     "highlights": [
       "Developed and deployed ML solutions and researched technologies across various Admiral business areas including claims, fraud detection, and pricing",
       "Migrated critical data pipelines and ML models from in-house systems to GCP/Vertex AI",
+      "Prototypes with AWS Connect including Lex (conversational AI) and Polly (text-to-speech)",
       "Security champion for ML products on Google Cloud Platform"
     ]
   },
@@ -65,11 +66,11 @@
     "url": "https://www.avaya.com/",
     "start_date": "2005",
     "end_date": "2018",
-    "summary": "Startup telecomms specialising in SIP and WebRTC.  Bought by Avaya for $140M in 2007 and subsequently spun off to focus on WebRTC",
+    "summary": "Startup telecoms specialising in SIP and WebRTC. Bought by Avaya for $140M in 2007 and subsequently spun off to focus on WebRTC",
     "highlights": [
       "Developer and architect on core application server for a telephony tech startup",
       "Led integrations with Microsoft, Avaya, and Cisco products",
-      "Major role in migrating products to the cloud (kubernetes, istio) incl. DevOps practices"  
+      "Major role in migrating products to AWS and Azure (Kubernetes, Istio) including DevOps practices"  
     ]
   },
 {
@@ -88,7 +89,7 @@
   },
 {
     "company": "Logica (CGI)",
-    "position": "Lead Machine Learning Engineer",
+    "position": "Software Engineer",
     "icon_url": "img/logica.ico",
     "url": "https://www.cgi.com",
     "start_date": "1996", 
@@ -151,10 +152,11 @@
   },{
     "name": "Space",
     "summary": "Medium level space nerd, ✅ Watch Scott Manley, ✅ Play KSP, ❌ Only 2 space-related t-shirts ",
-    "image_url": "img/ksp.png"
+    "image_url": "img/ksp.png",
+    "hide": true
   },{
     "name": "Guitar",
-    "summary": "Particularly playing fingerstyle Blues and Folk. Also have a few techical pojects related to learning / notation",
+    "summary": "Particularly playing fingerstyle blues and folk. Also have a few technical projects related to learning and notation",
     "image_url": "img/guitar.png"
   },{
     "name": "Cycling",
@@ -172,10 +174,10 @@
     "image_url": "img/agent-chat.png"
   },
   {
-    "title": "NVidia AI Project: Sheepdog Whistle Neural Network ",
+    "title": "NVidia AI Project: Sheepdog Whistle Neural Network",
     "summary": "",
     "highlights": [
-      "Controlling a robot the same way as as a sheepdog, through whistling!",
+      "Controlling a robot the same way as a sheepdog, through whistling!",
       "Custom-built JetBot powered by Jetson Nano and a Storm32 motor controller control board",
       "PyTorch neural net is trained with the sounds of different whistles or click sounds represented spectrographically as images"
     ],
@@ -184,19 +186,15 @@
   },{
     "hide": false,
     "title": "Teddington Robotics - Go! (Dual VESC Balancebot Chair)",
-    "summary": "Built a self balancing chair for my daugter's favourite teddy bear.  The Control Board is a dual VESC (often used in skateboards) but firmware is entirely my own.  Balancing somthing this big/heavy is tricky!",
-    "highlights": [
-      
-    ],
+    "summary": "Built a self-balancing chair for my daughter's favourite teddy bear. The control board is a dual VESC (often used in skateboards) but firmware is entirely my own. Balancing something this big and heavy is tricky!",
+    "highlights": [],
     "image_url": "img/teddington.png",
     "url": "https://www.youtube.com/watch?v=O1B_3NOeJz0"
   },{
-    "hide": false,
+    "hide": true,
     "title": "Driva Bach: A small Motor Control Board for Gimbal BLDCs",
-    "summary": "One of many Motor Control Boards I've designed using EasyCad/KiCad. This was printed by JLCPCB.  I'm a contributor to SimpleFOC and have done a lot with BLDCs, stm32, encoders And CanBUS",
-    "highlights": [
-      
-    ],
+    "summary": "One of many motor control boards I've designed using EasyCad/KiCad. This was printed by JLCPCB. I'm a contributor to SimpleFOC and have done a lot with BLDCs, STM32, encoders and CAN bus",
+    "highlights": [],
     "image_url": "img/driva-bach.png",
     "url": "https://oshwlab.com/williams.owen/driva-bach"
   }]

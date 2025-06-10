@@ -21,8 +21,30 @@ jobs:
         run: |
           pip install .
 
-      - name: Run main.py to generate cv.html
+      - name: Install Playwright browser for PDF generation
+        run: |
+          pip install playwright
+          playwright install chromium
+
+      - name: Run main.py to generate HTML and PDF
         run: python -m cvgen.main
+
+      - name: Create release tag with timestamp
+        id: tag
+        run: echo "tag=cv-$(date +'%Y.%m.%d-%H%M')" >> $GITHUB_OUTPUT
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.tag.outputs.tag }}
+          name: CV Release ${{ steps.tag.outputs.tag }}
+          body: |
+            Automated CV release generated on $(date +'%Y-%m-%d at %H:%M UTC')
+            
+            This release contains the latest PDF version of the CV.
+          files: ./html/cv.pdf
+          draft: false
+          prerelease: false
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
