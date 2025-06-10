@@ -270,34 +270,34 @@
             <h2 class="section-heading">Projects</h2>
             {% for project in projects %}
              {% if not project.hide %}
-              <section>
+              <section class="project-item">
+                <div class="project-content">
+                  <div class="project-text">
+                <h3 class="project-title">
+                    {% if project.url %}
+                      <a href="{{ project.url }}">{{ project.title }}</a>
+                    {% else %}
+                      {{ project.title }}
+                    {% endif %}
+                </h3>
+
+                  {% if project.summary %}<p>{{ project.summary }}</p>{% endif %}
+                  {% if project.highlights %}
+                    <ul>
+                      {% for highlight in project.highlights %}<li>{{ highlight }}</li>{% endfor %}
+                    </ul>
+                  {% endif %}
+                  </div>
                 {% if project.image_url %}
-                  <div class="gallery side-gallery">
-                      <figure>
-                        <img width="200"
-                             src="{{ project.image_url }}"
-                             alt="{{ project.image_url }}">
-                      </figure>
+                  <div class="project-image">
+                      <img 
+                           src="{{ project.image_url }}"
+                           alt="{{ project.title }}">
                   </div>
                 {% endif %}
-                <div>
-
-                <h3>
-                  {% if project.url %}
-                    <a href="{{ project.url }}">{{ project.title }}</a>
-                  {% else %}
-                    {{ project.title }}
-                  {% endif %}
-                </h3>
-                {% if project.summary %}<p>{{ project.summary }}</p>{% endif %}
-                {% if project.highlights %}
-                  <ul>
-                    {% for highlight in project.highlights %}<li>{{ highlight }}</li>{% endfor %}
-                  </ul>
-                {% endif %}
                 </div>
-              {% endif %}
               </section>
+             {% endif %}
             {% endfor %}
           </section>
         </div>

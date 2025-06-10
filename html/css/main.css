@@ -508,6 +508,29 @@ blockquote {
   .page-content {
     page-break-inside: avoid;
   }
+  
+  /* Project styles for print */
+  .project-content {
+    display: flex !important;
+  }
+  
+  .project-text {
+    width: 75% !important;
+  }
+  
+  .project-image {
+    flex-shrink: 0 !important;
+    max-height: 100px !important;
+    padding-left: 20px !important;
+    float: right !important;
+  }
+  
+  .project-image img {
+    width: auto !important;
+    height: 125px !important;
+    border-radius: 4px !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+  }
 }
 
 .company-icon {
@@ -523,4 +546,51 @@ blockquote {
   background: #f9f9f9;
   border-top: 1px solid #ccc;
   padding: 2rem 0;
+}
+
+.project-item {
+  grid-template-columns: 1fr auto;
+  gap: 1.5rem;
+  align-items: start;
+  margin-bottom: 2rem;
+}
+
+.project-content {
+  min-width: 0; /* Allows content to shrink */
+  display: flex;
+}
+
+.project-text {
+  width: 75%;
+}
+
+.project-title {
+  margin-bottom: 0.5rem !important;
+}
+
+.project-image {
+  flex-shrink: 0;
+  max-height: 100px;
+  padding-left: 20px;
+  float: right;
+}
+
+.project-image img {
+  width: auto;
+  height: 125px;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile layout - stack vertically */
+@media (max-width: 48rem) {
+  .project-item {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .project-image {
+    order: -1; /* Put image first on mobile */
+    max-width: 100%;
+  }
 }
