@@ -42,7 +42,7 @@ jobs:
             Automated CV release generated on $(date +'%Y-%m-%d at %H:%M UTC')
             
             This release contains the latest PDF version of the CV.
-          files: ./html/cv.pdf
+          files: ./html/owen-williams-*.pdf
           draft: false
           prerelease: false
 
