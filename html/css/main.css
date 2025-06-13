@@ -308,6 +308,7 @@ aside li {
   color: #333;
   font-size: 0.9rem;
   white-space: nowrap;
+  background-color: transparent;
 }
 
 .w-0 {
@@ -375,6 +376,8 @@ blockquote {
   border-radius: 0 4px 4px 0;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
+
+  
 
 @media (min-width: 37.5rem) {
   .main-gallery {
@@ -469,7 +472,7 @@ blockquote {
 
 /* Projects section styling */
 .projects-section {
-  background: #f9f9f9;
+  /* background: #f9f9f9; */
   border-top: 1px solid #ccc;
   padding: 2rem 0;
 }
@@ -527,10 +530,44 @@ blockquote {
 }
 
 @media print {
+  /* Smaller font after header */
+  .page-content,
+  .projects-section {
+    font-size: 0.85rem !important;
+  }
+  
+  /* Smaller sidebar headers for print */
+  aside h1 {
+    font-size: 0.9rem !important;
+  }
+  
+  aside h2 {
+    font-size: 0.85rem !important;
+  }
+  
+  aside h3 {
+    font-size: 0.8rem !important;
+  }
+  
+  aside h4 {
+    font-size: 0.75rem !important;
+  }
+  
+  /* Smaller text above skill bars */
+  aside h3 b {
+    font-size: 0.75rem !important;
+  }
+  
+  /* Ensure skill bar labels have transparent background in print */
+  .skill-bar-label {
+    background-color: transparent !important;
+    background: none !important;
+  }
+ 
   .page-content .container {
     display: grid !important;
     grid-template-columns: 2fr 1fr !important;
-    gap: 1rem !important;
+    gap: 0.5rem !important;
   }
   
   aside {
