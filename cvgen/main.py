@@ -33,7 +33,8 @@ def main():
         print("HTML file generated successfully!")
 
         # Generate PDF from HTML using Playwright
-        pdf_output_path = Path("html/cv.pdf")
+        short_date = datetime.now(tz=UTC).strftime("%Y-%m-%d")
+        pdf_output_path = Path(f"html/owen-williams-{short_date}.pdf")
 
         with sync_playwright() as p:
             browser = p.chromium.launch()
