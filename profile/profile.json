@@ -1,6 +1,6 @@
 {
   "name": "Owen Williams",
-  "label": "Machine Learning / Software Engineer",
+  "label": "Software Engineer / Machine Learning Engineer",
   "image_path": "img/owen.gif",
   "contact": {
     "email": "williams.owen@gmail.com",
@@ -8,7 +8,7 @@
     "location": "Cardiff, Wales, UK"
   },
   "url": "",
-  "summary": "Software Engineer with 25+ years building scalable systems, now specialising in Machine Learning and AI. Led teams delivering production ML models for NHS healthcare and insurance, whilst architecting cloud infrastructure on Azure, GCP, and AWS. Combines deep software engineering foundations with modern ML expertise to ship AI products that solve real-world problems.",
+  "summary": "Software Engineer with 25+ years building scalable systems using Python, Typescript, and C# including full-stack, cloud pipelines and Machine Learning / AI. Led teams delivering complex cloud solutions in Azure and GCP for NHS healthcare / insurance, and telecomms sectors. Combines deep software engineering foundations with modern ML expertise.",
 
   "social_links": [{
       "label": "LinkedIn",
@@ -35,13 +35,13 @@
     "url": "https://www.drdoctor.co.uk/",
     "start_date": "2022-02",
     "end_date": "2025-05",
-    "summary": "Led the AI team developing large ML models and data products to improve NHS clinic efficiency across 50 NHS Trusts",
+    "summary": "Led the AI team developing large complex full stack software solutions with ML models / data products to improve NHS clinic efficiency across 50 NHS Trusts",
     "highlights": [
-      "DNA model to predict patient no-shows and late cancels used by 10 NHS trusts",
-      "Visualisation and algorithms to support overbooking, linked appointments and workflows",
+      "DNA model to predict patient no-shows and late cancels used by 10 NHS trusts (python / databricks)",
+      "Visualisation and algorithms to support overbooking, linked appointments and workflows (Vue.JS, vite, d3)",
       "LLM solutions over patient communications to automate high volume hospital tasks",
       "Full-stack ML - infrastructure, feature engineering, model training/monitoring, and serving in Azure",
-      "Agentic LLM prototypes (including RT Voice) using OpenAI, Google and LangSmith Agent SDK"
+      "Agentic LLM prototypes (including RT Voice) using OpenAI, Google and LangGraph Agent SDK"
     ]
   },
 {
@@ -54,7 +54,7 @@
     "summary": "Initially worked in R&D exploring new product opportunities, then moved to Advanced Analytics to help move core models to Google Cloud Platform",
     "highlights": [
       "Developed and deployed ML solutions and researched technologies across various Admiral business areas including claims, fraud detection, and pricing",
-      "Migrated critical data pipelines and ML models from in-house systems to GCP/Vertex AI",
+      "Migrated critical data pipelines and ML models from in-house systems to GCP/Vertex AI ",
       "Prototypes with AWS Connect including Lex (conversational AI) and Polly (text-to-speech)",
       "Security champion for ML products on Google Cloud Platform"
     ]
